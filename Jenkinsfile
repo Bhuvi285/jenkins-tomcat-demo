@@ -3,22 +3,16 @@ pipeline {
 
     tools {
         maven "MAVEN"
-        jdk "JDK"
+        jdk "JDk"
     }
 
     stages {
 
         stage('Build') {
             steps {
-                bat 'mvn -B -DskipTests clean package'
+                bat 'mvn clean package'
             }
         }
 
-    }
-
-    post {
-        always {
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
-        }
     }
 }
