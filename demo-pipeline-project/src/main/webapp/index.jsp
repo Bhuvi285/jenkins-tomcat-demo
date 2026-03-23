@@ -1,8 +1,0 @@
-<html>
-<head>
-<title>Jenkins Pipeline Demo</title>
-</head>
-<body>
-<h1>Hello from Jenkins CI/CD Pipeline!</h1>
-</body>
-</html>
